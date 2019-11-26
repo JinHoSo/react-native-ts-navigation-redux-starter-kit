@@ -19,7 +19,7 @@
   - Unit tests with [Jest](https://github.com/facebook/jest), [Enzyme](https://github.com/airbnb/enzyme) and [react-native-testing-library](https://github.com/callstack/react-native-testing-library)
 
 - **Others**
-  - Mostly used *React hooks* not React class
+  - Mostly used **React hooks** not React class
 
 - **Package**
 ```
