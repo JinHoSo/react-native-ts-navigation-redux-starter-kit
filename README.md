@@ -16,7 +16,7 @@
   - [React Navigation](https://github.com/react-navigation/react-navigation): Routing and navigation for your React Native apps
 
 - **Unit testing**
-  - Unit tests with [Jest](https://github.com/facebook/jest), [Enzyme](https://github.com/airbnb/enzyme) and [react-native-testing-library](https://github.com/callstack/react-native-testing-library)
+  - Unit tests with [Jest](https://github.com/facebook/jest), [react-native-testing-library](https://github.com/callstack/react-native-testing-library)
 
 - **Others**
   - Mostly used **React hooks** not React class
