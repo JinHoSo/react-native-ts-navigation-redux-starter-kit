@@ -28,14 +28,14 @@ const getHeaderTitle = (route: Router) => {
 const TabNavigation = () => (
   <Tab.Navigator>
     <Tab.Screen
-      name="Home"
+      name={'Home'}
       component={Home}
       options={{
         title: 'Home',
       }}
     />
     <Tab.Screen
-      name="Settings"
+      name={'Settings'}
       component={Settings}
       options={{
         title: 'Settings',
@@ -47,8 +47,8 @@ const TabNavigation = () => (
 export const AppNavigation = () => (
   <NavigationContainer>
     <Stack.Navigator
-      initialRouteName="Home"
-      headerMode="screen"
+      initialRouteName={'Home'}
+      headerMode={'screen'}
       screenOptions={{
         headerTintColor: 'white',
         headerStyle: { backgroundColor: 'tomato' },
@@ -56,7 +56,7 @@ export const AppNavigation = () => (
     >
 
       <Stack.Screen
-        name="Home"
+        name={'Home'}
         component={TabNavigation}
         options={({ route }) => ({
           headerTitle: getHeaderTitle(route),
@@ -64,7 +64,7 @@ export const AppNavigation = () => (
       />
 
       <Stack.Screen
-        name="Profile"
+        name={'Profile'}
         component={Profile}
         options={{
           title: 'Profile',
