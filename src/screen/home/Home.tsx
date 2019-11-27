@@ -4,12 +4,12 @@ import { Button, StyleSheet, Text, View } from 'react-native'
 import { useSelector } from 'react-redux'
 
 import useAppStateStatus from '../../hooks/useAppStateStatus'
-import useHardwareBackPress from '../../hooks/useHardwareBackPress'
+import { useGlobalHardwareBackPress } from '../../hooks/useHardwareBackPress'
 import { RootState } from '../../redux/rootReducer'
 
 export default function Home() {
   useAppStateStatus()
-  useHardwareBackPress()
+  useGlobalHardwareBackPress()
 
   const navigation = useNavigation()
   const appStateStatus = useSelector((state: RootState) => state.appStateStatus)
