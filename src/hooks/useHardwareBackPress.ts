@@ -28,8 +28,8 @@ export const useHardwareBackPress = (): void => {
   const navigation = useNavigation()
 
   const handleBackPress = useCallback(() => {
-    if (canGoBack()) {
-      goBack()
+    if (navigation.canGoBack()) {
+      navigation.goBack()
       return true
     }
     else {
