@@ -6,6 +6,7 @@ import React from 'react'
 import Home from './screen/home/Home'
 import Profile from './screen/profile/Profile'
 import Settings from './screen/settings/Settings'
+import { navigationRef } from './services/navigationService'
 
 const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator()
@@ -45,7 +46,7 @@ const TabNavigation = () => (
 )
 
 export const AppNavigation = () => (
-  <NavigationContainer>
+  <NavigationContainer ref={navigationRef}>
     <Stack.Navigator
       initialRouteName={'Home'}
       headerMode={'screen'}
